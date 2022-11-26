@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <P>test auto deploy</P>
+    <h1 class="click-me">clickeame</h1>
+    <script>
+        document.addEventListener('click', function (event) {
+
+        // If the clicked element doesn't have the right selector, bail
+        if (!event.target.matches('.click-me')) return;
+
+        // Don't follow the link
+        event.preventDefault();
+
+        // Log the clicked element in the console
+        console.log(event.target);
+        alert(event.target);
+
+        }, false);
+    </script>
+</body>
+</html>
